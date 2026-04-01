@@ -1,0 +1,2 @@
+selected_model_family,selected_order_template,selected_seasonal_order_template,primary_seasonal_period,secondary_cycle_hours,recommended_train_window_hours,recommended_validation_window_hours,reason
+SARIMA,"(p,1,q)","(P,1,Q,24)",24,168,3984,336,"The raw series is non-stationary and strongly seasonal, while the transformed series supports a low-order daily SARIMA search."

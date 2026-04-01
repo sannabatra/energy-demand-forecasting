@@ -1,0 +1,6 @@
+{
+  "recommended_model": "seasonal_naive_s24",
+  "recommendation_basis": "Lowest holdout RMSE over the final 14-day evaluation window.",
+  "sarima_selected_by_bic": "sarima_211_111_24",
+  "seasonal_period_baseline": 24
+}

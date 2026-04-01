@@ -1,0 +1,2 @@
+selected_transformation,reason,seasonal_period_for_modeling
+log_diff_1_diff_24,Balances variance stabilization with non-seasonal and daily differencing for hourly SARIMA modeling.,24

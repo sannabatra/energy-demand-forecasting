@@ -1,0 +1,6 @@
+component,recommended_values,reason
+non_seasonal_ar_order_p,1 or 2,PACF typically shows its clearest spikes at the first two lags.
+non_seasonal_ma_order_q,0 or 1,ACF usually drops quickly after the first few lags once differenced.
+seasonal_ar_order_P,0 or 1,Seasonal structure remains visible but not dominant after differencing.
+seasonal_ma_order_Q,0 or 1,Seasonal spikes around lag 24 often align with a parsimonious seasonal MA term.
+seasonal_period_s,24,The strongest repeating cycle in the raw series is daily.

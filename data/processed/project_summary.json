@@ -1,0 +1,33 @@
+{
+  "raw_series_stationary": false,
+  "stationarity_fix": "Applied log transform, first differencing, and 24-hour seasonal differencing before SARIMA order selection.",
+  "selected_model_label": "sarima_211_111_24",
+  "selected_order": [
+    2,
+    1,
+    1
+  ],
+  "selected_seasonal_order": [
+    1,
+    1,
+    1,
+    24
+  ],
+  "evaluation_window_hours": 4320,
+  "holdout_hours": 336,
+  "sarima_metrics": {
+    "n_observations": 336.0,
+    "mae": 4548.322471335431,
+    "rmse": 5418.227195575365,
+    "mape_pct": 12.820629218550941,
+    "smape_pct": 13.715672875242497
+  },
+  "seasonal_naive_metrics": {
+    "n_observations": 336.0,
+    "mae": 3110.3898809523807,
+    "rmse": 3882.505158598971,
+    "mape_pct": 8.779007551543684,
+    "smape_pct": 8.851234149925634
+  },
+  "recommended_deployment_model": "seasonal_naive_s24"
+}

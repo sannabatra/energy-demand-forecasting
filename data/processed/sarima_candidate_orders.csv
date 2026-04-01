@@ -1,0 +1,7 @@
+label,p,d,q,P,D,Q,s,reason
+arima_baseline_211,2,1,1,0,0,0,0,Non-seasonal benchmark using the strongest short-run lags.
+sarima_111_011_24,1,1,1,0,1,1,24,Parsimonious daily seasonal benchmark.
+sarima_211_011_24,2,1,1,0,1,1,24,Adds one more non-seasonal AR lag suggested by the PACF.
+sarima_121_011_24,1,1,2,0,1,1,24,Tests whether a second MA lag improves the short-run error structure.
+sarima_111_111_24,1,1,1,1,1,1,24,Adds a seasonal AR term in case lag-24 persistence remains meaningful.
+sarima_211_111_24,2,1,1,1,1,1,24,Full low-order daily SARIMA candidate with both AR dimensions active.
