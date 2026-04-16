@@ -55,9 +55,16 @@ Use the project virtual environment:
 
 ```bash
 venv/bin/python -m unittest discover -s tests -v
+venv/bin/python scripts/validate_project.py
 venv/bin/python scripts/train_model.py
 venv/bin/python scripts/evaluate_model.py
 venv/bin/python scripts/forecast_next_day.py
+```
+
+To rerun validation and regenerate holdout outputs in one go:
+
+```bash
+venv/bin/python scripts/validate_project.py --rerun-evaluation
 ```
 
 Useful forecast modes:
@@ -69,6 +76,22 @@ venv/bin/python scripts/forecast_next_day.py --strategy seasonal_naive
 ```
 
 `champion` is the default. It reads [deployment_recommendation.json](/Users/sannabatra/energy-demand-forecasting/data/processed/deployment_recommendation.json) and uses the best holdout strategy automatically.
+
+## Simple UI
+
+You can run a lightweight local browser UI for classroom demos:
+
+```bash
+venv/bin/python scripts/run_forecast_ui.py
+```
+
+Then open `http://127.0.0.1:8765`.
+
+The UI lets you:
+
+- choose `champion`, `sarima`, or `seasonal_naive`
+- set the forecast horizon
+- optionally enter one manual hourly observation to overwrite an existing timestamp or append the next expected hour before forecasting
 
 ## Notebook Flowchart Coverage
 
